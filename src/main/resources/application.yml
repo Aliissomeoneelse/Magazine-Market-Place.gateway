@@ -14,6 +14,41 @@ spring:
                 regexp: /user-service/**
           uri: lb://user-service
 
+        - id: product-service
+          predicates:
+            - name: Path
+              args:
+                regexp: /product-service/**
+          uri: lb://product-service
+
+        - id: foreigndebt-service
+          predicates:
+            - name: Path
+              args:
+                regexp: /foreigndebt-service/**
+          uri: lb://foreigndebt-service
+
+        - id: file-service
+          predicates:
+            - name: Path
+              args:
+                regexp: /file-service/**
+          uri: lb://file-service
+
+        - id: category-service
+          predicates:
+            - name: Path
+              args:
+                regexp: /category-service/**
+          uri: lb://category-service
+
+        - id: basket-service
+          predicates:
+            - name: Path
+              args:
+                regexp: /basket-service/**
+          uri: lb://basket-service
+
 server:
   port: 9999
 
