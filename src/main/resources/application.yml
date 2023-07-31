@@ -58,3 +58,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka
   instance:
     preferIpAddress: true
+
+    #todo: http://localhost:9999/basket-service/loaner/
